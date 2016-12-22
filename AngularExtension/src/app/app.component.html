@@ -1,0 +1,13 @@
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #CC2A2E;">
+        <div class="navbar-header">
+            <span class="navbar-brand" style="color: #FFFFFF">Couchbase Shopping</span>
+        </div>
+    </nav>
+    <ul class="list-group" style="margin-top: 52px">
+        <li class="list-group-item" *ngFor="let item of items">{{ item.title }}</li>
+    </ul>
+    <a (click)="insert()" class="btn btn-circle btn-primary" style="position: fixed; bottom: 10px; right: 10px">
+        <span class="glyphicon glyphicon-plus"></span>
+    </a>
+</div>
